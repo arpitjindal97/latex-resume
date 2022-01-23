@@ -1,0 +1,265 @@
+\documentclass[a4paper]{arpit-resume}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{tikz}
+%\usepackage{arpit-data}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usetikzlibrary{backgrounds}
+\usepackage{fontawesome5}
+\usetikzlibrary{arrows.meta}
+%\setlength{\columnsep}{0.5cm}
+%\def\columnseprulecolor{\color{blue}}
+
+
+\begin{document}
+\begin{figure}[!ht]
+\begin{minipage}[t]{0.5\textwidth}
+\vspace{0pt}
+\begin{adjustwidth}{3pt}{0pt}
+\name{Arpit Agarwal}
+
+\vspace{1mm} \designation{Site Reliability Engineer}
+
+%\vspace{1mm} \summary{Experienced software engineer with a passion for developing innovative
+%programs that expedite the efficiency and effectiveness of organizational success. %Well-versed in technology and writing code to creating systems that are reliable and %user-friendly.}
+
+\vspace{1mm} \summary{DevOps Engineer with almost 4 years of working experience who loves to solve engineering problems. Well-versed in writing code to architecting solutions \& strategies. Always prefer following DevOps pratices using open-source softwares with a passion to contribute back to community.}
+\end{adjustwidth}
+
+\vspace{12pt}
+\section{Work Experience}{briefcase}
+\vspace{1pt}
+
+\begin{tikzpicture}[
+%background rectangle/.style={fill=red!40},show background rectangle,
+inner sep=0pt,outer sep=0pt]
+
+\draw[content, thick] (0,23) -- (0,0);
+\filldraw[content][-{Triangle[length=1.2mm, width=1.6mm]}] (0,22) -- (0,23.1);
+\filldraw[content](0,0)circle(2pt);
+
+\workitem{0}{22.6}{2020}{
+\begin{minipage}{0.88\linewidth}
+\raggedright
+\contributionheading{SAP Labs, Bangalore, India}\\
+        \achievement{Site Reliability Engineer}
+        \color{main-theme}(July 2020 - Present)\\
+        \timelineyear{}
+        \fontsize{7pt}{11pt}
+        \justifying \noindent
+Currently working in SAP Cloud Platform project
+\begin{myBullets}
+\item Developing \& Maintaining Monitoring stack of SAP Cloud Platform on IaC
+\item Reduced landscape update time by 85\% via automation using Jenkins
+\item Reduced outage downtime by 75\% via pipeline introduction in Concourse for basic tasks
+\item Automated testing of Riemann using Github Action, resulting in more confident PRs
+\item Created \& Maintained BOSH releases for Telegraf, Grafana, InfluxDB \& Riemann
+\item Increased productivity by 50\% by automating BOSH release creation via containerization
+\item Troubleshooted issues within SAP Cloud Platform environments in case of outages
+\item Provisioned Load Balancer via IaC on various Hyperscalers using Terraform
+\item Brought in MultiAZ support for the Monitoring stack, thus increasing Availability
+\item Saved team efforts by implementing Automatic credentials rotation of monitoring stack via scripting within IaC
+\item Derived optimum configuration to run Fluent at scale by doing performance test of Fluent in EFK stack
+\item Did Performance test of Cortex. Identified bottlenecks in Ingester \& Store Gateway
+\end{myBullets}
+Technologies used are K6, Docker, Prometheus, Grafana, K8s
+\end{minipage}
+}
+
+
+\workitem{0}{12.45}{2018}{
+%% content of work item
+\begin{minipage}{0.88\linewidth}
+\raggedright
+\contributionheading{SAP Labs, Bangalore, India}\\
+        \achievement{Scholar}
+        \color{main-theme}(Aug 2018 - June 2020)\\
+        \timelineyear{}
+        \fontsize{7pt}{11pt}
+\justifying \noindent
+DevOps Engineer in a product based on Microservice architecture
+\begin{myBullets}
+\item Architected the product to be cloud-native and collaborated with team to ensure that DevOps practices are being followed
+\item Developed resilient pipeline on Jenkins which integrated well with multiple branches
+\item Set up full production environment for applications to run on Cloud Foundry
+\end{myBullets}
+Software Engineer in Observability team
+\begin{myBullets}
+\item Integrated Jaeger into Observability Stack of SAP Cloud Platform via own project
+\item Worked with stakeholders to integrate Jaeger into their solutions for tracing
+\item Architected the Deployment strategy for Jaeger as a Service
+\end{myBullets}
+Full Stack Developer in cloud based product
+\begin{myBullets}
+\item Used NodeJS and UI5 during development
+\item Created Backend APIs in NodeJS for various features in a product which is used to visualize the customer's on-prem landscape
+\item Did UX enhancements on frontend using SAP UI5 library
+\end{myBullets}
+System Administrator in a project dedicated to migration
+\begin{myBullets}
+\item Tasked to migrate SAP Netweaver On-Premise systems to GCP
+\item Migrated 25+ Systems. Target of 1000 systems in that year was achieved
+\end{myBullets}
+Tooling: rsync, CloudEndure, Perl, Bash
+\end{minipage}
+}
+
+
+\workitem{0}{3}{2016}{
+%% content of work item
+\begin{minipage}{0.88\linewidth}
+\raggedright
+\contributionheading{GVC Systems, Noida, India}\\
+        \achievement{Intern}
+        \color{main-theme}(May 2016 - June 2016)\\
+        \timelineyear{}
+        \fontsize{7pt}{11pt}
+      \justifying \noindent
+Software Developer for IoT based applications and products
+\begin{myBullets}
+\item Developed E2E products for customer solving some of their daily problems e.g. Capture Vehicle Number in parking lot, Automatic Door Lock System, Dash Cam streaming video to Cloud.
+\item Technologies used were Docker, MQTT, SpringBoot, Android, Image Recognition, Java \& Python
+\end{myBullets}
+\end{minipage}
+}
+\end{tikzpicture}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.47\textwidth}
+\vspace{0pt}
+
+% Contact Info
+\hspace{7mm}
+\begin{tabular}{ l|r@{}l }
+
+\designation{Contact} & 
+\contacticon{phone-alt} &
+\contactlink{}{+91 828 588 8886} \\[1.5ex]
+
+&
+\contacticon{envelope} &
+\contactlink{mailto:}{arpitjindal97@gmail.com} \\[1.5ex]
+
+&
+\contacticon{github} &
+\contactlink{https://}{github.com/arpitjindal97} \\[1.5ex]
+
+&
+\contacticon{instagram} &
+\contactlink{https://}{instagram.com/arpit\_agarwal97}\\[1.5ex]
+
+&
+\contacticon{linkedin} &
+\contactlink{https://}{linkedin.com/in/arpitjindal97}\\
+
+\end{tabular}
+
+\vspace{10pt}
+\section{Achievements \& Certifications}{award}
+\vspace{5pt}
+
+\begin{tikzpicture}
+\draw[content, thick] (2,2.5) -- (2,0);
+
+\filldraw[content][-{Triangle[length=1.2mm, width=1.6mm]}] (2,2.1) -- (2,2.6);
+
+\achievementitem{2}{2.1}{Certified Kubernetes Administrator}{(July 2020 - July 2024)}{2020}
+\achievementitem{2}{1.3}{Secured 2nd position in Inter College Quiz Competition}{(Feb 2017)}{2017}
+\achievementitem{2}{0.5}{Awarded 50\% Scholarship in all Semesters}{}{2015};
+\filldraw[content](2,0)circle(2pt);
+
+\end{tikzpicture}
+
+\vspace{14pt}
+\section{Skills}{tools}
+\vspace{-1pt}
+
+\hspace{7mm}
+\begin{minipage}{.85\linewidth}
+\vspace{6pt}
+\begin{multicols}{2}
+\timelineyear{} % important
+\begin{myBullets}[itemsep=3.5pt]
+    \item \timelineyear{Kubernetes, Helm}
+    \item \timelineyear{Docker}
+    \item \timelineyear{GitOps, IaC}
+    \item \timelineyear{Jenkins, GH Actions}
+    \item \timelineyear{Bash, Golang}
+    \item \timelineyear{K6, JMeter}
+    \item \timelineyear{Prometheus, Fluent, Jaeger}
+    \item \timelineyear{Grafana, Kibana}
+    \item \timelineyear{Cortex, InfluxDB}
+    \item \timelineyear{GCP, AWS}
+\end{myBullets}
+\end{multicols}
+\end{minipage}
+
+
+\vspace{13pt}
+\section{Education}{graduation-cap}
+\vspace{5pt}
+
+\begin{tikzpicture}
+
+\draw[content, thick] (2,2.1) -- (2,0.2);
+%\filldraw[content][-{Triangle[length=1mm, width=2mm]}] (2,2.0) -- (2,2.2);
+\filldraw[content][-{Triangle[length=1.2mm, width=1.6mm]}] (2,0.2) -- (2,2.2);
+\educationitem{2}{1.7}{M.Tech in Software Engineering (CGPA 8.4)}{BITS Pilani}{(Aug 2018 - July 2022)}{2018}
+\educationitem{2}{.7}{Bachelor in Computer Applications (CGPA 7.52)}{Amity University}{(July 2015 - June 2018)}{2015}
+
+\filldraw[content](2,0.2)circle(2pt);
+
+\end{tikzpicture}
+
+\vspace{12pt}
+\section{Open-Source Contributions}{project-diagram}
+\vspace{6pt}
+
+\begin{tikzpicture}[
+%background rectangle/.style={fill=yellow!40},show background rectangle,
+]
+\contributionitem{0}{6.8}{Prometheus}
+{Raised issue \& followed through for the fix}
+{https://github.com/prometheus-community/helm-charts/issues/969}
+
+\contributionitem{0}{5.6}{Raspbian Recipes}
+{Network related scripts}
+{https://github.com/arpitjindal97/raspbian-recipes}
+
+\contributionitem{0}{4.4}{Jaeger}
+{Contributed to Helm Charts}
+{https://github.com/jaegertracing/helm-charts/pulls?q=author\%3Aarpitjindal97}
+
+\contributionitem{0}{3.2}{Jaeger Deployer}
+{Deploy Multi-tenant Jaeger using K8s}
+{https://github.com/arpitjindal97/jaeger-deployer}
+
+\contributionitem{0}{2}{Activities on Github}
+{Various PRs \& Issues}
+{https://github.com/pulls?q=author\%3Aarpitjindal97}
+\end{tikzpicture}
+
+\vspace{15pt}
+\section{Hobbies and Interest}{laugh}
+%\vspace{7pt}
+
+\hspace{7mm}
+\begin{minipage}{.85\linewidth}
+\vspace{3mm}
+\timelineyear{} % important
+\begin{myBullets}[itemsep=3.5pt]
+    \item \timelineyear{Games}
+    \item \timelineyear{Fitness}
+    \item \timelineyear{Music}
+    \item \timelineyear{Netflix}
+\end{myBullets}
+\end{minipage}
+
+\end{minipage}
+\end{figure}
+\end{document}
