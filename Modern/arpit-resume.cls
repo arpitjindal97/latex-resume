@@ -50,8 +50,13 @@
     linkcolor=green,
     filecolor=content,
     urlcolor=link,
-    pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
+    pdftitle={Arpit's Resume},
+    pdfauthor={Arpit Agarwal},
+    pdfsubject={Site Reliability Engineer},
+    pdfkeywords={Resume},
+    pdfproducer=xdvipdfmx,
+    pdfcreator=xelatex
 }
 
 \renewcommand{\name}[1]{ % Defines the command for the main heading
