@@ -18,5 +18,4 @@ ENV TTFONTS=/work//:
 ENV TEXMFOUTPUT=/tmp
 RUN tlmgr install xetex
 RUN tlmgr install geometry wrapfig vcell tabularray minifp environ etoolbox vwcol ragged2e enumitem \
-    fontspec fontawesome5 lettrine tcolorbox pgfplots ninecolors pgf changepage
-
+    fontspec fontawesome5 lettrine tcolorbox pgfplots ninecolors pgf changepage hyphenat
