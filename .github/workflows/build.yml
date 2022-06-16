@@ -1,0 +1,34 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  Build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Stage
+        uses: actions/checkout@v3
+      - name: Compile PDF
+        uses: addnab/docker-run-action@v3
+        with:
+          image: arpitjindal1997/latex:latest
+          options: -v ${{ github.workspace }}/Modern:/work
+          run: xelatex main.tex
+      - name: List files
+        run: |
+          ls -alh Modern
+          mv Modern/main.pdf .
+          rm -rf Modern/*
+          mv main.pdf Modern/Arpit_Agarwal_Resume.pdf
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: Modern
+          MESSAGE: "Deploy: ({sha})" 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

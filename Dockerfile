@@ -5,7 +5,7 @@ WORKDIR /work
 
 # Installation Process
 # Link: https://www.tug.org/texlive/quickinstall.html
-RUN wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+RUN wget -q https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 RUN tar -xzf install-tl-unx.tar.gz
 COPY texlive.profile texlive.profile
 RUN ./install-tl-*/install-tl --profile texlive.profile

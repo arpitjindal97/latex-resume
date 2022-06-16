@@ -229,7 +229,7 @@
     node[below right,
     outer sep=4pt,
     align=left,
-    yshift=3.5mm,
+    yshift=3.9mm,
     %preaction={fill, yellow}
     ] {
         \contributionheading{#3}\\
