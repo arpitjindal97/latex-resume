@@ -32,3 +32,4 @@ jobs:
           FOLDER: Modern
           MESSAGE: "Deploy: ({sha})" 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLEAR_GLOBS_FILE: ".clear-target-files"
