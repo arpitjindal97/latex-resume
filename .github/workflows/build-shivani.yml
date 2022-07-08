@@ -1,8 +1,8 @@
-name: Build
+name: Build Shivani
 on:
   push:
     branches:
-      - main
+      - shivani
   workflow_dispatch:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
           ls -alh Modern
           mv Modern/main.pdf .
           rm -rf Modern/*
-          mv main.pdf Modern/Arpit_Agarwal_Resume.pdf
+          mv main.pdf Modern/Shivani_Giri_Resume.pdf
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
@@ -32,3 +32,4 @@ jobs:
           FOLDER: Modern
           MESSAGE: "Deploy: ({sha})" 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLEAR_GLOBS_FILE: ".clear-target-files"
