@@ -51,9 +51,9 @@
     filecolor=content,
     urlcolor=link,
     pdfpagemode=FullScreen,
-    pdftitle={Arpit's Resume},
-    pdfauthor={Arpit Agarwal},
-    pdfsubject={Site Reliability Engineer},
+    pdftitle={Shivani's Resume},
+    pdfauthor={Shivani Giri},
+    pdfsubject={Software Developer},
     pdfkeywords={Resume},
     pdfproducer=xdvipdfmx,
     pdfcreator=xelatex
